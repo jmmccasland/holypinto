@@ -63,7 +63,7 @@ body {
 
 
 .heading {
-  margin-bottom: $m-gutter * 4;
+  margin-bottom: $m-gutter * 2;
 }
 
 .logo {
@@ -91,7 +91,6 @@ body {
 .btn {
   display: block;
   position: relative;
-  // top: -2px;
   width: 100%;
   margin: 0;
   padding: ($m-gutter / 2) $m-gutter;
@@ -105,5 +104,23 @@ body {
   &:focus {
     top: 2px;
     outline: none;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.store-list {
+  display: flex;
+
+  &__item {
+    font-size: 2.25rem;
+  }
+
+  > * + * {
+    margin-left: $m-gutter;
   }
 }

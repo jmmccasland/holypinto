@@ -4,13 +4,11 @@ $c-brand-dark: darken($c-brand, 10%);
 $c-brand-darker: darken($c-brand, 20%);
 $c-accent: #dfc9a0;
 
+// Shadows
+$s-box-shadow: rgba(0, 0, 0, 0.25);
+
 // Measurements
 $m-gutter: 1rem;
-
-
-
-// @import 'yoga';
-// @import 'normalize';
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';

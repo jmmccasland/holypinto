@@ -2,7 +2,7 @@
 
 // album cover styles
 .album {
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 10px $s-box-shadow;
 }
 
 // content section heading
@@ -16,7 +16,6 @@
   font-size: 2.5rem;
   text-align: center;
 }
-
 
 // Songkick Widget Overrides
 .light,

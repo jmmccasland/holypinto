@@ -1,0 +1,26 @@
+// Component styles for elements nested inside of <main>
+
+// album cover styles
+.album {
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+// content section heading
+.heading {
+  margin-bottom: $m-gutter * 2;
+}
+
+// section title - for use on new section headings
+.title {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+// Songkick Widget Overrides
+.light,
+.medium,
+.narrow {
+  margin: 0;
+}

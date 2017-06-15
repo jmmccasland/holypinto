@@ -1,8 +1,8 @@
 // Colors
 $c-brand: #a80301;
-$c-accent: lighten(#cfaf72, 12%);
-$c-text: darken($c-brand, 10%);
+$c-brand-dark: darken($c-brand, 10%);
 $c-brand-darker: darken($c-brand, 20%);
+$c-accent: #dfc9a0;
 
 // Measurements
 $m-gutter: 1rem;
@@ -20,93 +20,12 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'resets';
 @import 'layout';
 @import 'top-nav';
+@import 'components/main';
+@import 'components/form';
+
 
 body {
-  background: $c-text;
+  background: $c-brand-dark;
   color: $c-accent;
   font-family: 'PANGOLIN', sans-serif;
-}
-
-.site {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-  &__content {
-    flex: 1;
-  }
-}
-
-.section--main {
-  // height: calc(100vh);
-}
-
-// Components
-.album {
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.25);
-}
-
-.heading {
-  margin-bottom: $m-gutter * 2;
-}
-
-.input {
-  width: 100%;
-  height: 2.5rem;
-  border: 0;
-  border-radius: 0.1rem;
-  background: $c-accent;
-  color: $c-brand;
-  font-family: 'PANGOLIN', sans-serif;
-  font-size: 1.25rem;
-  text-align: center;
-
-  &:focus {
-    border: 0.2rem solid $c-accent;
-    outline: none;
-  }
-}
-
-.btn {
-  display: block;
-  position: relative;
-  width: 100%;
-  margin: 0;
-  padding: ($m-gutter / 2) $m-gutter;
-  border: 0;
-  border-radius: 0.1rem;
-  background: $c-brand;
-  color: $c-accent;
-  font-family: 'Pangolin', sans-serif;
-  font-size: 1.25rem;
-
-  &:focus {
-    top: 2px;
-    outline: none;
-  }
-}
-
-.title {
-  margin: 0;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-.store-list {
-  display: flex;
-
-  &__item {
-    font-size: 2.25rem;
-  }
-
-  > * + * {
-    margin-left: $m-gutter;
-  }
-}
-
-// Songkick Overrides
-.light,
-.medium,
-.narrow {
-  margin: 0;
 }

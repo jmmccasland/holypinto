@@ -1,8 +1,25 @@
+// Site wrapper to flex out a sticky footer on screens with tall y axis
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__content {
+    flex: 1;
+  }
+}
+
+// Reusable .section & .container
 .section {
   padding: $m-gutter;
 
   &--main {
     padding: 2rem 1rem 4rem;
+  }
+
+  &--footer {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 
@@ -12,7 +29,7 @@
 }
 
 
-// Section Main Content Layout
+// MAIN || .section--main component layout
 .content {
   display: flex;
   flex-direction: row-reverse;
@@ -25,7 +42,6 @@
 
   &__right {
     flex-basis: 50%;
-    font-family: 'PANGOLIN', sans-serif;
   }
 
   > * + * {
@@ -33,8 +49,26 @@
   }
 }
 
-@media (max-width: 700px) {
 
+// FOOTER || .section--footer component layout
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+
+  &__item {
+    font-size: 1.5rem;
+  }
+}
+
+
+// MEDIA QUERIES
+@media (max-width: 700px) {
+  // Single column layout for ||MAIN - components||
   .content {
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -50,28 +84,5 @@
     &__right {
       width: 100%;
     }
-  }
-}
-
-// Section Footer Layout
-.section--footer {
-  // width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.social-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  // margin: 0 auto;
-
-  > * + * {
-    margin-left: $m-gutter;
-  }
-
-  &__item {
-    font-size: 1.5rem;
   }
 }

@@ -1,0 +1,23 @@
+// app/styles/_top-nav.scss
+// styles for top navigation
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // color: $c-brand-darker;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+}
+
+
+.logo {
+  margin: 0;
+}

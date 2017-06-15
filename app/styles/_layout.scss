@@ -1,5 +1,9 @@
 .section {
   padding: $m-gutter;
+
+  &--main {
+    padding: 2rem 1rem 4rem;
+  }
 }
 
 .container {
@@ -14,7 +18,7 @@
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
-  height: calc(100vh - 7.5rem);
+  // height: calc(100vh - 7.5rem);
 
   &__left {
     flex-basis: 50%;
@@ -32,10 +36,6 @@
 }
 
 @media (max-width: 700px) {
-
-  .section--main {
-    margin-bottom: $m-gutter * 4;
-  }
 
   .content {
     flex-direction: column-reverse;
